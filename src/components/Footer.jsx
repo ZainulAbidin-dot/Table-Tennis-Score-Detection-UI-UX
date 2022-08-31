@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "../styles";
-import {
-  footerLinks,
-  socialMedia,
-} from "../../../../React JS with Tailwind/bank_modern_app/src/constants";
+import { footerLinks, socialMedia } from "../constants/index";
 import { logo } from "../assets";
 
 const Footer = () => (
