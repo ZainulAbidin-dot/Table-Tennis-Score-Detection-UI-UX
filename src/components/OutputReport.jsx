@@ -17,7 +17,7 @@ const OutputReport = () => (
         className={`${styles.flexCenter}  ${styles.padding} flex-col border-2 border-zinc-700`}
       >
         <h2
-          className={`${styles.flexCenter} ${styles.padding} ss:text-[52px] text-[32px] font-poppins font-normal ss:leading-[100px] leading-[75px] text-white`}
+          className={`${styles.flexCenter} ${styles.padding} ss:text-[32px] text-[32px] font-poppins font-normal ss:leading-[100px] leading-[75px] text-white`}
         >
           Score: 5
         </h2>
@@ -27,7 +27,7 @@ const OutputReport = () => (
         className={`${styles.flexCenter} ${styles.padding}  flex-col border-2 border-zinc-700`}
       >
         <h2
-          className={`${styles.flexCenter} ${styles.padding} ss:text-[52px] text-[32px] font-poppins font-normal ss:leading-[100px] leading-[75px] text-white`}
+          className={`${styles.flexCenter} ${styles.padding} ss:text-[32px] text-[32px] font-poppins font-normal ss:leading-[100px] leading-[75px] text-white`}
         >
           Score: 7
         </h2>

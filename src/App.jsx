@@ -1,29 +1,34 @@
 import React from "react";
-import Billing from "./components/Billing";
-import Clients from "./components/Clients";
-import Footer from "./components/Footer";
-import Form from "./components/Form";
-import Navbar from "./components/Navbar";
-import OutputReport from "./components/OutputReport";
 import styles from "./styles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutUs from "./components/AboutUs";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import LatestVideos from "./components/LatestVideos";
+import Ranking from "./components/Ranking";
+
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
+  <BrowserRouter>
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
       </div>
     </div>
-
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="latestVideos" element={<LatestVideos />} />
+      <Route path="aboutUs" element={<AboutUs />} />
+      <Route path="ranking" element={<Ranking />} />
+    </Routes>
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Billing />
-        <Clients />
-        <Form />
-        <OutputReport />
         <Footer />
       </div>
     </div>
-  </div>
+  </BrowserRouter>
 );
 
 export default App;

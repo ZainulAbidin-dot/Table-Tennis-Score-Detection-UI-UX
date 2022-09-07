@@ -19,14 +19,22 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
+    path: "/",
   },
   {
-    id: "get-started",
-    title: "Get Started",
+    id: "latest-videos",
+    title: "Latest Videos",
+    path: "latestVideos",
+  },
+  {
+    id: "ranking",
+    title: "Ranking",
+    path: "ranking",
   },
   {
     id: "about-us",
     title: "About Us",
+    path: "aboutUs",
   },
 ];
 
