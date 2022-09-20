@@ -5,8 +5,8 @@ import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LatestVideos from "./components/LatestVideos";
 import Ranking from "./components/Ranking";
+import TopPlayers from "./components/TopPlayers";
 
 const App = () => (
   <BrowserRouter>
@@ -19,7 +19,7 @@ const App = () => (
     </div>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="latestVideos" element={<LatestVideos />} />
+      <Route path="topPlayers" element={<TopPlayers />} />
       <Route path="aboutUs" element={<AboutUs />} />
       <Route path="ranking" element={<Ranking />} />
     </Routes>
